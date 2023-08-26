@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+    <title>Chicago Institute of Art</title>
+</head>
+<body>
+    <div>
+        <h1 class="title">Welcome to this Small Gallery of the Art Institute of Chicago</h1>
+        <h2 class="subtitle">Click an image below for more info!</h2>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="load_data(90048)">
+                <img class="gallery__img" title="Distant View of Niagra Falls: Click Here for More Info!" id="90048" src="images/Distant View of Niagra Falls.jpg" alt="Distant View of Niagra Falls">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="load_data(111628)">
+                <img class="gallery__img" title="Nighthawks: Click Here for More Info!" id="111628" src="images/Nighthawks.jpg" alt="Nighthawks">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="load_data(4502)">
+                <img class="gallery__img" title="The Burning City: Click Here for More Info!" id="4502" src="images/The Burning City.jpg" alt="The Burning City">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="load_data(95998)">
+                <img class="gallery__img" title="Old Man With a Gold Chain: Click Here for More Info!" id="95998" src="images/Old Man with a Gold Chain.jpg" alt="Old Man with a Gold Chain">
+            </figure>
+
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="load_data(24645)">
+                <img class="gallery__img" title="Under the Wave off Kanagawa: Click Here for More Info!" id="24645" src="images/Under the Wave.jpg" alt="Under the Wave off Kanagawa ">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="load_data(111642)">
+                <img class="gallery__img" title="The Awakening: Click Here for More Info!" id="111642" src="images/The Awakening.jpg" alt="The Awakening">
+            </figure>
+        </div>
+    </div>
+    <section class="display">
+        <section class="art-info"></section>
+        <div class="button-cont">
+            <button id="clear-button" onclick="clear_data()">Clear</button>
+        </div>
+    </section>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</html>
